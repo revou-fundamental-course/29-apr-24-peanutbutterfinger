@@ -1,9 +1,167 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Travel Agent</title>
-    </head>
-    <body>
-        <h1>Your Trusted Travel Agent's</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebi Travel Agent</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navigation">
+    <div style="background-image: url(assets/bunni.png); background-size:cover; height: 32px; width:32px;"></div>
+        <nav>
+            <button><a href="#title">Home</a></button>
+            <button id="ourpackagebutton"><a href="#ourPackage">Our Package</a></button>
+            <button><a href="#sign-up">Sign up</a></button>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <header>
+            <h1 id="title">Ebi Travel Agent</h1>
+            <h3 id="slogan">Your Trusted Travel Agent's<small></small> </h3>
+        </header>
+    </section>
+    <section class="main-content">
+        <div class="left-section">
+            <div class="slideshow">
+                <img class="img-slideshow" src="assets/ref bali.png">
+                <img class="img-slideshow" src="assets/ref jepang.png">
+                <img class="img-slideshow" src="assets/ref thai.png">
+                <img class="img-slideshow" src="assets/ref jogja.png">
+                <button onclick="plusDivs(-1)" class="img-button"></button>
+                <button onclick="plusDivs(1)" class="img-button"></button>
+            </div>
+            <p id="testimony"><em>"Ebi travel menyediakan transportasi yang bersih dan nyaman."</em></p>
+            <article class="customer">
+                <div id="customerpict" style="background-image: url(assets/windah.jpeg); height: 50px; width:50px; background-size:cover;"></div>
+                <div class="customername">
+                    <h4 style="margin-top: 5px; margin-bottom: 0px;">Mas Brando Franco Windah</h4>
+                    <p style="margin-top: 5px; margin-bottom: 0px;font-size: 12px;"><em>Youtuber</em></p>
+                </div>
+            </article>
+            
+            <hr id="testimony-line">
+            <h4 id="moreinfo">More information about my offer</h4>
+            <div class="information">
+                <p class="list"><b>1</b></p>
+                <p class="info">Lorem ipsum</p>
+            </div>
+            <div class="information">
+                <p class="list"><b>2</b></p>
+                <p class="info">Lorem ipsum</p>
+            </div>
+            <div class="information">
+                <p class="list"><b>3</b></p>
+                <p class="info">Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+        
+            <form>
+                <div class="form-input">
+                    <label class="form-label" id="Your-name">Your Name:</label>
+                    <input id="form-username" type="text" required placeholder="First and last name">
+                    <br>
+                    <label class="form-label">Email Adrdress:</label>
+                    <input id="form-email" type="email" required placeholder="example@email.com">
+                    <br>
+                    <label class="form-label">What are you interested in?</label>
+                    <select>
+                        <optgroup label="Nasional">
+                            <option>Yogyakarta</option>
+                            <option>Bali</option>
+                            <option>Surabaya</option>
+                        </optgroup>
+                        <optgroup label="Internasional">
+                            <option>Jepang</option>
+                            <option>Singapura</option>
+                            <option>Thailand</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button type="button" id="submit-btn">SEND</button>
+            </form>
+        </div>
+    </section>
+    
+    <section>
+        <header>
+            <h1 id="ourPackage">Our Package</h1>
+        </header>
+    </section>
+    <section>
+        <article class="ourpackage-content">
+            <div class="package-list">
+                <div class="package-img" style="background-image: url(assets/2606517_5856.png); height: 50px; width:50px; background-size:cover;"></div>
+                <article>
+                    <h2>Yogyakarta</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+    
+            <div class="package-list">
+                <div class="package-img" style="background-image: url(assets/2606517_5856.png); height: 50px; width:50px; background-size:cover;"></div>
+                <article>
+                    <h2>Bali</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+    
+            <div class="package-list">
+                <div class="package-img" style="background-image: url(assets/2606517_5856.png); height: 50px; width:50px; background-size:cover;"></div>
+                <article>
+                    <h2>Surabaya</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+        </article>
+       
+        <hr id="ourpackage-line">
+
+        <article class="ourpackage-content">
+            <div class="package-list">
+                <div class="package-img" style="background-image: url(assets/2606517_5856.png); height: 50px; width:50px; background-size:cover;"></div>
+                <article>
+                    <h2>Jepang</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+            
+            <div class="package-list">
+                <div class="package-img" style="background-image: url(assets/2606517_5856.png); height: 50px; width:50px; background-size:cover;"></div>
+                <article>
+                    <h2>Singapura</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+    
+            <div class="package-list">
+                <div class="package-img" style="background-image: url(assets/2606517_5856.png); height: 50px; width:50px; background-size:cover;"></div>
+                <article>
+                    <h2>Thailand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+        </article>
+    </section>
+
+    <hr id="closing-line">
+
+    <section class="closing" id="sign-up">
+        <h1>Happy and save traveling with us!</h1>
+        <p>Lorem ipsum</p>
+        <button>SIGN UP</button>
+    </section>
+
+    <hr class="footer-line">
+
+    <footer>
+        <p>Terms of Service  Privacy Policy</p>
+        <p id="end">© 2024 Ebi Travel</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
